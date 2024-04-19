@@ -22,12 +22,11 @@ const randomExcuse = () => {
   const when = randomElement(excuses.when);
 
   const excuseMessage = `${intro} ${action} ${what} ${when}`;
-  excuses.innerHTML = excuseMessage;
+  document.getElementById("excuse").innerHTML = excuseMessage;
 };
 
-window.onload = () => {
+document.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector("#excuse-button");
-  const excuse = document.querySelector("#excuse");
 
   button.addEventListener("click", randomExcuse);
-};
+});

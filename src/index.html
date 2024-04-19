@@ -3,61 +3,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Excuse Generator</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-      }
-
-      #excuse {
-        margin-top: 20px;
-        font-size: 18px;
-      }
-
-      button {
-        font-size: 18px;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <h1>Random Excuse Generator</h1>
     <button id="excuse-button">Generate Excuse</button>
     <div id="excuse"></div>
-    <script>
-      const excuses = {
-        intro: ["The dog", "My grandma", "The mailman", "My bird"],
-        action: ["ate", "peed", "crushed", "broke"],
-        what: ["my homework", "y phone", "the car"],
-        when: [
-          "before the class",
-          "when I was sleeping",
-          "while I was exercising",
-          "during my lunch",
-          "while I was praying"
-        ]
-      };
-
-      const randomElement = arr => {
-        return arr[Math.floor(Math.random() * arr.length)];
-      };
-
-      const randomExcuse = () => {
-        const intro = randomElement(excuses.intro);
-        const action = randomElement(excuses.action);
-        const what = randomElement(excuses.what);
-        const when = randomElement(excuses.when);
-
-        const excuseMessage = `${intro} ${action} ${what} ${when}`;
-        excuse.innerHTML = excuseMessage;
-      };
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const button = document.querySelector("#excuse-button");
-        const excuse = document.querySelector("#excuse");
-
-        button.addEventListener("click", randomExcuse);
-      });
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
