@@ -1,7 +1,7 @@
 const excuses = {
-  intro: ["The dog", "My grandma", "The mailman", "My bird"],
+  intro: ["Romi", "Neo", "Larry", "Samir"],
   action: ["ate", "peed", "crushed", "broke"],
-  what: ["my homework", "y phone", "the car"],
+  what: ["my windows", "my phone", "the universe"],
   when: [
     "before the class",
     "when I was sleeping",

@@ -1,16 +1,75 @@
 body {
+  background-image: url(https://images.unsplash.com/photo-1488330890490-c291ecf62571?ixlib=rb-4.0.3);
+  background-size: cover;
+}
+
+.everything{
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
   margin-top: 200px;
+  background: rgba(0, 0, 0, 0.055);
+  backdrop-filter: blur(10px);
+  background-clip: content-box;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  
+}
+
+.title {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: moccasin;
 }
 
 #excuse {
-  margin-top: 20px;
-  font-size: 18px;
+  margin: 15px;
+  font-size: 24px;
+  color: moccasin;
 }
 
 button {
   font-size: 18px;
   cursor: pointer;
+  background-color: rgb(0, 126, 38);
+  height: 40px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+#excuse-button {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(177, 4, 4, 0);
+  transition: all.2s ease-in-out;
+}
+
+#excuse-button:before {
+  content: " ";
+  display: block;
+  width: 200px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.651);
+  position: absolute;
+  top: -10px;
+  left: -200px;
+  transform: rotate(-45deg);
+  transition: all.2s ease-in-out;  
+}
+
+#excuse-button:hover:before {
+  margin-left: 300%;
+}
+
+#excuse-button:hover {
+  border: 2px solid rgba(255, 255, 255, 1);
 }
